@@ -1,5 +1,12 @@
+@font-face {
+  font-family: 'webfont';
+  src: url("//at.alicdn.com/t/ftp80srx5u2nvcxr.eot");
+  /* IE9*/
+  src: url("//at.alicdn.com/t/ftp80srx5u2nvcxr.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/ftp80srx5u2nvcxr.woff") format("woff"), url("//at.alicdn.com/t/ftp80srx5u2nvcxr.ttf") format("truetype"), url("//at.alicdn.com/t/ftp80srx5u2nvcxr.svg#NotoSansHans-DemiLight") format("svg");
+  /* iOS 4.1- */ }
+
 html {
-  font-family: sans-serif;
+  font-family: "webfont",sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
