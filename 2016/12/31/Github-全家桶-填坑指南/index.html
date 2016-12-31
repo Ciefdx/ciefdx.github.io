@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<!-- Head tag -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Description-->
+  
+
+  <!--Author-->
+  
+  <meta name="author" content="Joe Dawn">
+  
+
+  <!--Open Graph Title-->
+  
+      <meta property="og:title" content="Github-全家桶-填坑指南"/>
+  
+  <!--Open Graph Description-->
+  
+  <!--Open Graph Site Name-->
+  <meta property="og:site_name" content="Ciefdx Home"/>
+  <!--Type page-->
+  
+      <meta property="og:type" content="article" />
+  
+  <!--Page Cover-->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Title -->
+  
+  <title>Github-全家桶-填坑指南 - Ciefdx Home</title>
+
+
+  <link rel="shortcut icon" href="https://hexo.io/icon/favicon-96x96.png">
+
+  <!-- Custom CSS/Sass -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!----------------------------
+  https://github.com/GallenHu/hexo-theme-Daily
+
+ _____            _   _
+|  __ \          (_) | |
+| |  | |   __ _   _  | |  _   _
+| |  | |  / _` | | | | | | | | |
+| |__| | | (_| | | | | | | |_| |
+|_____/   \__,_| |_| |_|  \__, |
+                          __/ |
+                         |___/
+
+    --------------------------->
+
+</head>
+
+
+<body>
+
+  <!-- Nav -->
+  <header class="site-header">
+  <div class="header-inside">
+    <div class="logo">
+      <a href="/" rel="home">
+        
+        <img src="https://hexo.io/logo.svg" alt="Ciefdx Home" height="60">
+        
+      </a>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse">
+        <ul class="navbar-nav">
+          
+          
+            <li>
+              <a href="/.">
+                
+                  home
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/archives">
+                
+                  archive
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+    <div class="button-wrap">
+      <button class="menu-toggle">Primary Menu</button>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="content-area">
+  <div class="post">
+    <!-- Post Content -->
+    <div class="container">
+      <article>
+        <!-- Title date & tags -->
+        <div class="post-header">
+          <h1 class="entry-title">
+            Github-全家桶-填坑指南
+            
+          </h1>
+          <p class="posted-on">
+          2016-12-31
+          </p>
+          <div class="tags-links">
+            
+              
+            
+          </div>
+        </div>
+        <!-- Post Main Content -->
+        <div class="entry-content">
+          <p>##Github Desktop</p>
+<p>###下载<br>  亚马逊AWS国际是被墙的,你需要打开 小飞机右键 &gt;&gt; 系统代理模式 &gt;&gt; 全局模式<br>  待你的小飞机 <strong>变色</strong> 之后,下载就会走代理(默认好像走的系统代理)<br>  <strong>下载完成后,一定要关闭全局模式 因为很多程序会调用系统IE的</strong><br>  <strong>举个栗子 QQ音乐,QQ游戏</strong></p>
+<p>###代理设置<br>  安装好之后,双击桌面的 Git Shell 运行如下两条命令<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --global http.proxy 127.0.0.1:2333</div><div class="line">git config --global https.proxy 127.0.0.1:2333</div></pre></td></tr></table></figure></p>
+<p>  <strong>我更改过默认的端口,所以我填的是2333! 一般都是默认端口1080</strong><br>  删除代理<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --system (或 --global 或 --local) --unset http.proxy</div><div class="line">git config --system (或 --global 或 --local) --unset https.proxy</div></pre></td></tr></table></figure></p>
+<p>  PS:这个貌似只改了Git的http和htpps,Desktop ssh git@github.com这些并没有走代理</p>
+<p>##Atom</p>
+<p>###下载<br>  下载是离线安装包,直接下载就可以,不过 <strong>迅雷</strong> 会快很多</p>
+<p>###Atom 代理设置<br>  还是再Git Shell里面运行<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">apm config <span class="built_in">set</span> strict-ssl <span class="literal">false</span></div><div class="line">apm config <span class="built_in">set</span> https-proxy http://proxy:8080</div><div class="line">apm config <span class="built_in">set</span> http-proxy http://proxy:8080</div></pre></td></tr></table></figure></p>
+<p>  因为我会出现SSL错误,所以我把https里的协议切换成了http<br>  参考这里<a href="https://github.com/jspm/github/issues/59" target="_blank" rel="external">issues56</a></p>
+<p>##NPM</p>
+<p>###代理设置<br>  Git Shell走起<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm config <span class="built_in">set</span> proxy http://server:port</div><div class="line">npm config <span class="built_in">set</span> https-proxy http://server:port</div></pre></td></tr></table></figure></p>
+<p>  如果代理不支持https需要修改npm存放包的地址<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm config <span class="built_in">set</span> registry <span class="string">"http://registry.npmjs.org/"</span></div></pre></td></tr></table></figure></p>
+<p>##参考资源<br>  <a href="https://gist.github.com/laispace/666dd7b27e9116faece6" target="_blank" rel="external">https://gist.github.com/laispace/666dd7b27e9116faece6</a><br>  <a href="http://www.luckerworks.com/archives/67517" target="_blank" rel="external">http://www.luckerworks.com/archives/67517</a></p>
+
+        </div>
+      </article>
+    </div>
+    <!-- Comments -->
+    <div class="container">
+      
+<section id="comment">
+  <!-- <h1 class="title">留言</h1> -->
+
+  
+</section>
+
+
+    </div>
+    <!-- Pre or Next -->
+    <div class="nav-links">
+      
+      
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <!-- Footer-widgets -->
+<div class="footer-widgets">
+  <div class="row inside-wrapper">
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">关于我</h1>
+        <div class="custom-widget-content">
+          
+          <ul><li>Coming</li></ul>
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">与我联系</h1>
+        <div class="widget-text">
+          
+            
+              <a href="https://github.com/Ciefdx" class="icon icon-github" target="_blank">github</a>
+            
+              <a href="mailto:Ciefdx@gmail.com" class="icon icon-mail" target="_blank">mail</a>
+            
+          
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">站内搜索</h1>
+        <div class="widget-text">
+          <form onSubmit="return appDaily.submitSearch('')">
+            <p>
+              <input type="text" placeholder="search..." id="homeSearchInput">
+            </p>
+            <!-- <input type="submit" value="GO"> -->
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="site-info">
+  <p>
+    <span>Ciefdx Home &copy; 2016</span>
+    
+      <span class="split">|</span><span>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/GallenHu/hexo-theme-Daily" target="_blank">Daily</a></span>
+    
+  </p>
+</footer>
+
+
+  <!-- After footer scripts -->
+  <!-- scripts -->
+<script src="//cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+<script src="/js/app.js"></script>
+
+
+
+</body>
+
+</html>
