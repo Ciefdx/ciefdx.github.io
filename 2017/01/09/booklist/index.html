@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Title -->
+    
+    <title>
+        booklist | Ciefdx Home
+    </title>
+    
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+    
+    <!-- Meta & INfo -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="Ciefdx">
+    <meta name="description" content="Record on front-end development or more..">
+    <meta name="keywords" content="Front-end,前端,ciefdx">
+    
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+    
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Ciefdx Home">
+    
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://ciefdx.github.io">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="booklist | Ciefdx Home">
+    <meta property="og:description" content="Record on front-end development or more..">
+    
+     <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+        
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+    
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="/css/material.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+	body, html{
+		font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+	}
+	
+    a{
+        color: #00838F
+    }
+    
+    .mdl-card__media,
+    #search-label,
+    #search-form-label:after,
+    #scheme-Paradox .hot_tags-count,
+    #scheme-Paradox .sidebar_archives-count,
+    #scheme-Paradox .sidebar-colored .sidebar-header,
+    #scheme-Paradox .sidebar-colored .sidebar-badge{
+        background-color: #0097A7 !important
+    }
+    
+	/* Sidebar User Drop Down Menu Text Color */
+	#scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+    #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus{
+        color: #0097A7 !important
+    }
+    
+    #post_entry-right-info,
+    .sidebar-colored .sidebar-nav li:hover > a,
+    .sidebar-colored .sidebar-nav li:hover > a i,
+    .sidebar-colored .sidebar-nav li > a:hover,
+    .sidebar-colored .sidebar-nav li > a:hover i,
+    .sidebar-colored .sidebar-nav li > a:focus i,
+    .sidebar-colored .sidebar-nav > .open > a,
+    .sidebar-colored .sidebar-nav > .open > a:hover,
+    .sidebar-colored .sidebar-nav > .open > a:focus,
+    #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a{
+        color: #0097A7 !important
+    }
+    
+    .toTop{
+        background: #757575 !important
+    }
+		
+	.material-layout .material-post>.material-nav,
+	.material-layout .material-index>.material-nav,
+	.material-nav a{
+		color: #757575;
+	}
+		
+	#scheme-Paradox .MD-burger-layer {
+		background-color: #757575;
+	}
+
+	#scheme-Paradox #post-toc-trigger-btn{
+		color: #757575;
+	}
+	
+	.post-toc a:hover{
+		color: #00838F;
+		text-decoration: underline;
+	}
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+        body{
+            background-color: #F5F5F5
+        }
+		
+		/* blog_info bottom background */
+        #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+            background-color: #fff;
+        }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+        .fade {
+            transition: all 800ms linear;
+            -webkit-transform: translate3d(0,0,0);
+            -moz-transform: translate3d(0,0,0);
+            -ms-transform: translate3d(0,0,0);
+            -o-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+            opacity: 1;
+        }
+
+        .fade.out{
+            opacity: 0;
+        }
+    </style>
+
+	<script src="/js/jquery.min.js"></script>
+	
+	<link rel="stylesheet" href="/css/highlight/solarized-white.css">
+	
+	<!-- UC Browser Compatible-->
+	<script>
+		var agent = navigator.userAgent.toLowerCase();
+		if(agent.indexOf('ucbrowser')>0) {
+			document.write('<link rel="stylesheet" href="/css/uc.css">');
+		   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+		}
+	</script>
+    
+    <!-- Custom Head -->
+    
+</head>
+	
+	
+
+    <body id="scheme-Paradox">
+
+		
+        <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+				
+			
+			
+            <!-- Main Container -->
+            <main class="material-layout__content" id="main">
+				
+                <!-- Top Anchor -->
+                <div id="top"></div>
+				
+				
+                <!-- Hamburger Button -->
+                <button class="MD-burger-icon sidebar-toggle">
+                    <span class="MD-burger-layer"></span>
+                </button>
+				
+				
+                <!-- Post TOC -->
+
+    
+	<!-- Back Button -->
+<!--
+	<div class="material-back" id="backhome-div" tabindex="0">
+		<a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#" onclick="window.history.back();return false;" target="_self" role="button" data-upgraded=",MaterialButton,MaterialRipple">
+			<i class="material-icons" role="presentation">arrow_back</i>
+			<span class="mdl-button__ripple-container">
+				<span class="mdl-ripple"></span>
+			</span>
+		</a>
+	</div>			
+-->
+	<!-- Left aligned menu below button -->
+	<button id="post-toc-trigger-btn"
+			class="mdl-button mdl-js-button mdl-button--icon">
+	  <i class="material-icons">format_list_numbered</i>
+	</button>
+
+	<ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+		for="post-toc-trigger-btn">
+			
+			<ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1、Head-First-HTML与CSS"><span class="post-toc-number">1.</span> <span class="post-toc-text">1、Head First HTML与CSS</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2、CSS-权威指南"><span class="post-toc-number">2.</span> <span class="post-toc-text">2、CSS 权威指南</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3、精通-CSS"><span class="post-toc-number">3.</span> <span class="post-toc-text">3、精通 CSS</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#4、CSS-Secrets"><span class="post-toc-number">4.</span> <span class="post-toc-text">4、CSS Secrets</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#5、图解-CSS3-（核心技术与案例实战）"><span class="post-toc-number">5.</span> <span class="post-toc-text">5、图解 CSS3 （核心技术与案例实战）</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#6、Effective-Javascript-编写高质量-Javascript-代码的-68-个有效方法"><span class="post-toc-number">6.</span> <span class="post-toc-text">6、Effective Javascript 编写高质量 Javascript 代码的 68 个有效方法</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#7、编写可维护的JavaScript"><span class="post-toc-number">7.</span> <span class="post-toc-text">7、编写可维护的JavaScript</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#8、Javascript-高级程序设计"><span class="post-toc-number">8.</span> <span class="post-toc-text">8、Javascript 高级程序设计</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#9、Javascript-语言精粹"><span class="post-toc-number">9.</span> <span class="post-toc-text">9、Javascript 语言精粹</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#10、Javascript-权威指南"><span class="post-toc-number">10.</span> <span class="post-toc-text">10、Javascript 权威指南</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#11、Javascript-设计模式"><span class="post-toc-number">11.</span> <span class="post-toc-text">11、Javascript 设计模式</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#12、Javascript-设计模式与开发实践"><span class="post-toc-number">12.</span> <span class="post-toc-text">12、Javascript 设计模式与开发实践</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#13、jQuery-技术内幕"><span class="post-toc-number">13.</span> <span class="post-toc-text">13、jQuery 技术内幕</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#14、数据结构与算法-Javascript-描述"><span class="post-toc-number">14.</span> <span class="post-toc-text">14、数据结构与算法 Javascript 描述</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#15、React-引领未来的用户界面开发框架"><span class="post-toc-number">15.</span> <span class="post-toc-text">15、React 引领未来的用户界面开发框架</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#16、HTML5-游戏开发进阶指南"><span class="post-toc-number">16.</span> <span class="post-toc-text">16、HTML5 游戏开发进阶指南</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#17、深入浅出-Nodejs"><span class="post-toc-number">17.</span> <span class="post-toc-text">17、深入浅出 Nodejs</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#18、HTTP-权威指南"><span class="post-toc-number">18.</span> <span class="post-toc-text">18、HTTP 权威指南</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#19、黑客与画家"><span class="post-toc-number">19.</span> <span class="post-toc-text">19、黑客与画家</span></a></li></ol>
+		
+<!--			<li class="mdl-menu__item">Some Action</li>-->
+	</ul>
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+		
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+	<!-- Paradox Post Header -->
+	
+		
+			<!-- Random Thumbnail -->
+			<div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+				<script>
+    
+    var randomNum;
+    randomNum = Math.floor(Math.random() * 5 + 1);
+    
+    $(".post_thumbnail-random").css('background-image', 'url(' + '/img/random/' + randomNum + '.png' + ')');
+    
+</script>
+
+		
+	
+        <p class="article-headline-p">
+            booklist
+        </p>
+    </div>
+
+	
+
+				
+				
+					<!-- Paradox Post Info -->
+					<div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Ciefdx</strong>
+        <span>1月 09, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+<!--
+    <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+        <i class="material-icons" role="presentation">favorite</i>
+        <span class="visuallyhidden">favorites</span>
+    </button>
+-->
+
+    <!-- Qrcode -->
+    
+
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+
+    
+
+    
+    
+    <!-- Share Weibo -->
+    
+
+    <!-- Share Twitter -->
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+    <a class="post_share-link" href="https://telegram.me/share/url?url=https://ciefdx.github.io/2017/01/09/booklist/index.html&text=booklist" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 Telegram
+        </li>
+    </a>
+    
+</ul>
+
+</div>
+
+				
+
+                <!-- Post Content -->
+                <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+	
+		<h2 id="1、Head-First-HTML与CSS"><a href="#1、Head-First-HTML与CSS" class="headerlink" title="1、Head First HTML与CSS"></a>1、Head First HTML与CSS</h2><p>这本书最大的优点就是除了基础还是基础，非常适合完全不知道前端开发是什么的门外汉作为第一本入门书籍来学习， 整本书采用插画和故事场景的形式叙述，和那些枯燥、深奥的HTML书籍完全不同，秉持了 Head First 系列一贯通俗易懂的风格。你看这本书的时候会发现就像是在看漫画书一样轻松。是我看过对初学者最友好的书，没有之一。</p>
+<h2 id="2、CSS-权威指南"><a href="#2、CSS-权威指南" class="headerlink" title="2、CSS 权威指南"></a>2、CSS 权威指南</h2><p>在看了第一本书后，想必你已经对 HTML 和 CSS 的基础知识有了一定的了解，甚至你已经能够做出一些简单的网站了。但是你可能只是知道一些常见的 CSS 属性，毕竟上一本书只是讲解一些基础知识。所以如果你想要全面的、深入的了解 CSS ，那么权威指南系列是你的不二选择。</p>
+<p>这是一本非常经典的 CSS 参考书，它的经典之处在于，它用普通人类可以理解的语言系统、全面地讲解了 CSS 规范。这本书会告诉你，CSS 是什么、CSS 有什么、CSS 可以做什么。</p>
+<p>这本书就像是 CSS 里面的圣经一样，以神一般的地位存在。当然了，你不要被它的厚度给吓到，其实你在看这本书的时候完全不需要非要每一页都非常详细的看一遍，你只需要粗略的翻一下，了解一下内容，然后大部分情况下把它当做字典来使用。用一个知识点学一个知识点就好了。</p>
+<h2 id="3、精通-CSS"><a href="#3、精通-CSS" class="headerlink" title="3、精通 CSS"></a>3、精通 CSS</h2><p>这同样是一本非常经典的 CSS 图书，它侧重于实践，告诉你如何正确地使用 CSS。</p>
+<p>这本书将最有用的 CSS 技术汇总在一起，还总结了 CSS 设计中的极具实践，讨论了解决各种实际问题的技术，填补了一直以来 CSS 图书的空白。</p>
+<p>作者多年来一直在编写、设计和宣传基于标准的网页设计，我们现在有幸在本书中看到他以简洁清晰的方式讲授最重要的 CSS 技术。本书提供了一套网页设计人员不可或缺的解决方案、技巧和经验。</p>
+<h2 id="4、CSS-Secrets"><a href="#4、CSS-Secrets" class="headerlink" title="4、CSS Secrets"></a>4、CSS Secrets</h2><p>大家可能注意到了，这两本都出版于 2006 年。而今年已经是 2016 年了。如果你的书架只能放得下三本 CSS 书，除了上面的那两本之外，我向你强力推荐的一定是这一本。</p>
+<p>这本书的准确出版时间为2016年04月底，也就是说截止目前为止，这本书都还没有出版，那么我为什么要向大家推荐一部还没有出版的书籍呢？github 上有试读篇，感兴趣可以先看看，不管你是什么感受，反正我看完就跪着去下单了。</p>
+<p>对于中级的 CSS 开发者来说，这本书可以发挥最大的功效——它可以帮助你进阶。相信很多开发者在学习 CSS 到了一定阶段的时候，感觉自己好像什么都会了，但遇到复杂问题时往往又感觉捉襟见肘、力不从心。这就是遇到瓶颈了。如何突破瓶颈、进入下一个阶段？要做的无非是两件事——实践和思考。书并不能代替你思考，但一本好书可以向你示范，什么样的思考方式是正确的。</p>
+<h2 id="5、图解-CSS3-（核心技术与案例实战）"><a href="#5、图解-CSS3-（核心技术与案例实战）" class="headerlink" title="5、图解 CSS3 （核心技术与案例实战）"></a>5、图解 CSS3 （核心技术与案例实战）</h2><p>这本书是手淘的大漠写的，大漠作为 W3cplus 创始人，一直专注对 CSS 方面尤其是 CSS3 的研究，是国内最早研究和使用CSS3技术的一批人。这本书算是他的呕心力作，在书中有趣且易懂的来描述了 CSS3 的每一个特性。不仅内容极为全面、详实，而且富含大量的案例，实用性非常强，如果你对 CSS3 非常感兴趣，那你就有福了。</p>
+<h2 id="6、Effective-Javascript-编写高质量-Javascript-代码的-68-个有效方法"><a href="#6、Effective-Javascript-编写高质量-Javascript-代码的-68-个有效方法" class="headerlink" title="6、Effective Javascript 编写高质量 Javascript 代码的 68 个有效方法"></a>6、Effective Javascript 编写高质量 Javascript 代码的 68 个有效方法</h2><p>Effective 系列丛书经典著作，亚马逊五星级畅销书。就冲着这样的地位也值得入手。作者凭借多年标准化委员会工作和实践经验，深刻辨析JavaScript 的内部运作机制、特性、陷阱和编程最佳实践，将它们高度浓缩为极具实践指导意义的 68 条精华建议。内容很接地气，实用性很强，我表示看过之后受益颇深。无论你是刚学习 JS 的入门者，还是有着几年经验的开发者，这本书都值得你一看。</p>
+<h2 id="7、编写可维护的JavaScript"><a href="#7、编写可维护的JavaScript" class="headerlink" title="7、编写可维护的JavaScript"></a>7、编写可维护的JavaScript</h2><p>这是一本构建编码风格手册，帮助你和你的团队从“游击队”走向“正规军”的书籍。书中向开发人员阐述了如何在团队开发中编写具备高可维护性的JavaScript代码。覆盖了编码风格、编程技巧、自动化、测试等几方面。无论你是前端开发者还是团队 leader，无论你是刚入门的初学者还是有经验的开发者，都建议你阅读一下这一本书。</p>
+<h2 id="8、Javascript-高级程序设计"><a href="#8、Javascript-高级程序设计" class="headerlink" title="8、Javascript 高级程序设计"></a>8、Javascript 高级程序设计</h2><p>JavaScript 超级畅销书，技术经典名著。本书在详细讲解了JavaScript语言的核心之后，条分缕析地为读者展示了现有规范及实现为开发Web应用提供的各种支持和特性，全面深入、贴近实战的特点非常适合有一定编程经验但是想要进阶的开发者来学习。</p>
+<h2 id="9、Javascript-语言精粹"><a href="#9、Javascript-语言精粹" class="headerlink" title="9、Javascript 语言精粹"></a>9、Javascript 语言精粹</h2><p>众所周知，Javascript 之父只用 10 天时间就把 Javascript 设计出来了。由于设计时间太短，语言的一些细节考虑得不够严谨。这个曾是“世界上最被误解的语言”，担负了太多的特性，包括糟糕的交互和失败的设计，但是现在，JavaScript 俨然从 “最受误解的编程语言” 演变为了 “最流行的语言”，这说明 Javascript 有其自身独特的魅力。本书剥开了 JavaScript 沾污的外衣，抽离出一个具有更好可靠性、可读性和可维护性的JavaScript 子集，让你看到一门优雅的、轻量级的和非常富有表现力的语言。说其是每一个 Javascript 开发者都必备的一本书一点也不为过。</p>
+<h2 id="10、Javascript-权威指南"><a href="#10、Javascript-权威指南" class="headerlink" title="10、Javascript 权威指南"></a>10、Javascript 权威指南</h2><p>权威指南系列想必已经不用多说了，各个都很经典，值得入手。这本书详细的讲解了 Javascript 中的各种语法和语言核心设计，覆盖了 JS 的核心 API、遗留的客户端API和W3C标准DOM API，记述了这些API中的每一个JavaScript对象、方法、性质、构造函数、常量和事件处理程序。不过由于其内容量过于庞大，建议平时作为字典使用即可。</p>
+<p>如果你的书架只能放得下三本JS 书， 那么这三本已经凑齐了，我强烈推荐『Javascript 语言精粹』、『Javascript 高级程序设计』和这一本『Javascript 权威指南』。</p>
+<h2 id="11、Javascript-设计模式"><a href="#11、Javascript-设计模式" class="headerlink" title="11、Javascript 设计模式"></a>11、Javascript 设计模式</h2><p>这本也算是 O’REILLY 系列中的一个非常好的书籍，实际上 O’REILLY 系列基本上都没有差的。书中集中介绍了很多流行的设计模式在JavaScript中的应用以及实现方式。作为高级前端开发工程师学习设计模式的一本进阶书籍非常合适。</p>
+<h2 id="12、Javascript-设计模式与开发实践"><a href="#12、Javascript-设计模式与开发实践" class="headerlink" title="12、Javascript 设计模式与开发实践"></a>12、Javascript 设计模式与开发实践</h2><p>这本书是由国内知名前端团队腾讯 AlloyTeam 成员编写的，设计模式自古乃程序员高谈论阔之话题，许多程序员从设计模式中学到了设计软件的灵感，或者是问题的解决方案。但是有些人却认为设计模式只适合静态语言，Javascript 这种动态语言根本就没有设计模式一说。显然，本书给了你最好的答案。</p>
+<p>该书全面涵盖了 JavaScript 的 16 个常用的设计模式、设计原则、编程技巧和代码重构，由浅入深的详细介绍了面向对象的设计原则以及在设计模式中的体现。让你能够将经典的设计模式应用到 JS 中，实乃高级程序设计必读之佳作。</p>
+<h2 id="13、jQuery-技术内幕"><a href="#13、jQuery-技术内幕" class="headerlink" title="13、jQuery 技术内幕"></a>13、jQuery 技术内幕</h2><p>阿里巴巴资深前端开发工程师墨智的大作，没出版之前我就一直在关注，渴望能偶早早看到。</p>
+<p>jQuery 作为全球使用量最大的 JS 库，它的优秀想必我也不需要说了，如果你使用了多年的 jQuery，但一直不敢去了解它的源码实现方式，或者你觉得你的 JS 技能进入了瓶颈期，那这本书对你来说就如同雪中送炭一样。</p>
+<p>本书首先通过“总体架构”梳理了各个模块的分类、功能和依赖关系，让大家对 jQuery 的工作原理有大致的印象；然后按照源码几乎逐行分析了其中各个模块的源码实现，分析的详细程度简直“令人发指”。不过这本书是基于 1.x 的版本进行分析的，阅读的时候略微注意即可，实际上即使是 1.x 版本的 jQuery，也非常值得我们学习。</p>
+<h2 id="14、数据结构与算法-Javascript-描述"><a href="#14、数据结构与算法-Javascript-描述" class="headerlink" title="14、数据结构与算法 Javascript 描述"></a>14、数据结构与算法 Javascript 描述</h2><p>这本书覆盖了常用的基本数据结构，如果你对数据结构很感兴趣，算是一本不错的入门书籍吧，推荐指数三颗星。但是本书中也有一些错误出现，建议看中文版的同时对照英文勘误表进行阅读和学习。</p>
+<h2 id="15、React-引领未来的用户界面开发框架"><a href="#15、React-引领未来的用户界面开发框架" class="headerlink" title="15、React 引领未来的用户界面开发框架"></a>15、React 引领未来的用户界面开发框架</h2><p>2014 年横空出世的由 Facebook 推出的开源框架 React.js，基于 Virtual DOM 重新定义了用户界面的开发方式，彻底革新了大家对前端框架的认识。在这个火热朝天的年代，如果你连 React 都还没听说过，那还是赶紧洗洗睡吧。如果你听说过但是没有使用过，或者是想要学习 React 但是该不知如何下手，再或者是看不懂那些晦涩难懂的英文文档，那么这本书就很适合你了。这本书介绍了 React 的一些基础知识，比较适合入门，但是前端开发的世界变化的这么快，估计这本书的生命周期也没几年吧。</p>
+<h2 id="16、HTML5-游戏开发进阶指南"><a href="#16、HTML5-游戏开发进阶指南" class="headerlink" title="16、HTML5 游戏开发进阶指南"></a>16、HTML5 游戏开发进阶指南</h2><p>这本书介绍了 HTML5 游戏开发的一般过程和技巧，如果你对 HTML5 游戏开发很感兴趣，可以看一下。并且书中也有很多的案例，作为一个学习游戏开发的入门书籍还是可以的。</p>
+<h2 id="17、深入浅出-Nodejs"><a href="#17、深入浅出-Nodejs" class="headerlink" title="17、深入浅出 Nodejs"></a>17、深入浅出 Nodejs</h2><p>开发者的大事，大快所有人心的大好事。</p>
+<p>出自国内阿里大神朴灵的大作，国内最好的 Nodejs 书籍，没有之一。同时也是第一本深度讲解 Node 的图书。本书从不同的视角介绍了 Node 内在的特点和结构。非常适合想要深入了解学习 Nodejs 的高级开发者来学习。实际上，不管是否学习过 Node，只要你热爱技术，都推荐你阅读它。</p>
+<h2 id="18、HTTP-权威指南"><a href="#18、HTTP-权威指南" class="headerlink" title="18、HTTP 权威指南"></a>18、HTTP 权威指南</h2><p>谁说做前端开发不需要了解 http 相关知识？高级前端开发者永远不会仅仅满足于了解 ajax 是怎么回事之后就止步不前，如果你想要学习 http 和通信协议相关的知识，那就不要再犹豫了，一定是这本书了。</p>
+<p>书中尝试着将HTTP中一些互相关联且常被误解的规则梳理清楚，并编写了一系列基于各种主题的章节，对HTTP各方面的特性进行了介绍。书中对HTTP“为什么”这样做进行了详细的解释，而不仅仅停留在它是“怎么做”的。非常适合作为高级开发者进阶学习之资料。</p>
+<h2 id="19、黑客与画家"><a href="#19、黑客与画家" class="headerlink" title="19、黑客与画家"></a>19、黑客与画家</h2><p>这本书就比较特殊了，这本是硅谷创业之父Paul Graham 的文集，注意，是文集，而不是像上面那些那样是技术书籍。</p>
+<p>这本书主要介绍黑客的爱好和动机，讨论黑客成长、黑客对世界的贡献以及编程语言和黑客工作方法等所有对计算机时代感兴趣的人的一些话题。书中的内容不但有助于了解计算机编程的本质、互联网行业的规则，还会帮助读者了解我们这个时代，迫使读者独立思考。</p>
+<p>简单的来说，这是一本谈论编程哲学的书籍，而不是针对某种语言进行解释的技术书籍。</p>
+<p>本书适合所有的程序员和互联网工作者，以及一切对计算机感兴趣的人阅读。</p>
+
+	
+	
+	
+	
+</div>
+				
+				
+
+                <!-- Post Comments -->
+                
+                    
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/01/02/Google搜索技巧/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+        </div>
+    </div>
+
+				
+				
+					<!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay "></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored  sidebar-fixed-left" role="navigation">
+	<div id="sidebar-main">
+	    <!-- Sidebar Header -->
+		<div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.jpg);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+    <i class="material-icons">clear_all</i>
+    <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="Ciefdx's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        Ciefdx@gmail.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+		<!-- Sidebar Navigation  -->
+		<ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+			
+                <li>
+                    <a href="mailto:Ciefdx@gmail.com" target="_blank" title="Email Me">
+						<i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    <li id="sidebar-first-li">
+        <a href="/" target="_self">
+            <i class="material-icons sidebar-material-icons">home</i>
+             主页
+        </a>
+    </li>
+
+    <!-- I'm Feeling Lucky -->
+<!--
+    <li class="dropdown">
+        <a href="" target="_self">
+            <i class="material-icons sidebar-material-icons">explore</i>
+             sidebar.imlucky
+        </a>
+    </li>
+-->
+
+
+    <!-- Archives  -->
+    <li class="dropdown">
+        <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+            <i class="material-icons sidebar-material-icons">inbox</i>
+             归档
+            <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+            <a class="sidebar_archives-link" href="/archives/2017/01/">一月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/12/">十二月 2016<span class="sidebar_archives-count">1</span></a>
+        </ul>
+    </li>
+
+    <!-- Categories  -->
+    
+
+    <!-- Divider -->
+    <li class="divider"></li>
+
+
+    <!-- Pages  -->
+	
+
+    <!-- Article Numebr  -->
+    <li>
+        <a href="/archives">
+             文章总数
+             <span class="sidebar-badge">3</span>
+        </a>
+    </li>
+</ul>
+
+
+		<!-- Sidebar Divider -->
+		<div class="sidebar-divider"></div>
+
+		<!-- Sidebar Footer -->
+		<!-- 
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持。 :) 
+-->
+
+<!-- Theme Material -->
+<a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+	<div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+		主题 - Material
+		<span class="sidebar-badge badge-circle">i</span>
+	</div>
+</a>
+
+<!-- Help & Support -->
+<!--
+<a href="mailto:hiviosey@gmail.com" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+		sidebar.help
+		<span class="mdl-button__ripple-container">
+			<span class="mdl-ripple"></span>
+		</span>
+	</div>
+</a>
+-->
+
+<!-- Feedback -->
+<!--
+<a href="https://github.com/viosey/hexo-theme-material/issues" target="_blank" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+         sidebar.feedback
+                    <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+</a>
+-->
+
+<!-- Abount Theme -->
+<!--
+<a href="https://blog.viosey.com/index.php/Material.html" target="_blank" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+         sidebar.about_theme
+        <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+</a>-->
+
+	</div>
+    
+    <!-- Sidebar Sponsor -->
+    
+
+
+</aside>
+
+				
+				
+				
+					<!-- Footer Top Button -->
+					<div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+				
+				
+				<!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+	
+	
+		<!-- Paradox Footer Left Section -->
+		<div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+    
+
+    <!-- Facebook -->
+    
+    
+
+    <!-- Google + -->
+    
+    
+
+    <!-- Weibo -->
+    
+    
+
+    <!-- Instagram -->
+    
+    
+
+    <!-- Tumblr -->
+    
+    
+
+    <!-- Github -->
+    
+    <a href="github.com/Ciefdx" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-github.png);">
+        <span class="visuallyhidden">Github</span>
+    </button></a>
+    
+
+    <!-- LinkedIn -->
+    
+    
+</div>
+
+
+		<!--Copyright-->
+		<div id="copyright">Copyright&nbsp;©&nbsp;<script type="text/javascript">var fd = new Date();document.write(fd.getFullYear());</script>&nbsp;Ciefdx Home</div>
+
+		<!-- Paradox Footer Right Section -->
+
+		<!-- 
+		I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+		It will not impact the appearance and can give developers a lot of support :)
+
+		很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+		它不会影响美观并可以给开发者很大的支持。 :) 
+		-->
+
+		<div class="mdl-mini-footer--right-section">
+			<div>
+				<div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+				<div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+			</div>
+		</div>
+	
+    
+</footer>
+                
+				<!-- Import File -->
+<script src="/js/highlight.min.js"></script>
+<script src="/js/js.min.js"></script>
+<script src="/js/nprogress.js"></script>
+
+<script type="text/javascript">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    
+    $('#nprogress .bar').css({
+        'background': '#FF4081'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #FF4081, 0 0 15px #FF4081'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#FF4081',
+        'border-left-color': '#FF4081'
+    });
+    
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Swiftye -->
+
+
+<!-- Local Search-->
+
+
+<!-- Window Load-->
+<script>
+    $(window).load(function() {
+        // Post_Toc parent position fixed
+        $(".post-toc-wrap").parent(".mdl-menu__container").css("position", "fixed");
+    });
+</script>
+
+<!-- MathJax Load-->
+
+            </main>
+        </div>
+		
+    </body>
+		
+	
+</html>
